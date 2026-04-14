@@ -174,7 +174,7 @@ def extract_frames(video_path, num_frames=16):
 
 @app.api_route("/", methods=["GET", "HEAD"], response_class=HTMLResponse)
 async def index(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse(request=request, name="index.html")
 
 @app.get("/health")
 async def health_check():
