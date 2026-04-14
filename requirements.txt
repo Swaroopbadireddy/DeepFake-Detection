@@ -2,8 +2,10 @@ fastapi
 uvicorn
 python-multipart
 jinja2
-torch==2.2.2
-torchvision==0.17.2
+
+torch==2.5.1
+torchvision==0.20.1
+
 timm
 opencv-python-headless
 numpy<2.0.0
